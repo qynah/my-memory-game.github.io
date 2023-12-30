@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseMode"
+    android:orientation="vertical"
+    android:background="@color/backgr">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#FB9292"
+            app:srcCompat="@android:drawable/ic_menu_revert"
+            tools:ignore="SpeakableTextPresentCheck"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="100dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                        <Button
+                            android:id="@+id/btnlevel1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:backgroundTint="#FB9292"
+                            android:text="Vòng 1"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"/>
+                        <Button
+                            android:id="@+id/btnlevel2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:backgroundTint="#FB9292"
+                            android:text="Vòng 2"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"/>
+                        <Button
+                            android:id="@+id/btnlevel3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:backgroundTint="#FB9292"
+                            android:text="Vòng 3"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"/>
+                        <Button
+                            android:id="@+id/btnlevel4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:backgroundTint="#FB9292"
+                            android:text="Vòng 4"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="right"
+                    android:layout_weight="1">
+                        <Button
+                            android:id="@+id/btnlevel5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:backgroundTint="#FB9292"
+                            android:text="Vòng 5"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"/>
+                        <Button
+                            android:id="@+id/btnlevel6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:backgroundTint="#FB9292"
+                            android:text="Vòng 6"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"/>
+                        <Button
+                            android:id="@+id/btnlevel7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:backgroundTint="#FB9292"
+                            android:text="Vòng 7"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"/>
+                        <Button
+                            android:id="@+id/btnlevel8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:backgroundTint="#FB9292"
+                            android:text="Vòng 8"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"/>
+
+                </LinearLayout>
+        </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My memory game_android</string>
+    <string-array name="item_spinner">
+        <item>Tên thuốc</item>
+        <item>Loại thuốc</item>
+        <item>Ngày sản xuất</item>
+        <item>Đã hết hạn</item>
+    </string-array>
+</resources>

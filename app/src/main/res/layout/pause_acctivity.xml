@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgr"
+    tools:context="com.example.mymemorygame_android.PauseActivity">
+
+
+    <LinearLayout
+        android:id="@+id/layoutSelectionWhenPause"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@color/backgr"
+        android:orientation="vertical"
+        android:weightSum="5"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:id="@+id/layout_continue"
+            android:background="@drawable/layout_with_border"
+            android:layout_weight="1"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="46dp"
+                android:backgroundTint="#FB9292"
+                app:fabSize="mini"
+                app:srcCompat="@android:drawable/ic_media_play"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiếp tục"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btn_continue"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_centerVertical= "true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_history"
+            android:background="@drawable/layout_with_border"
+            android:layout_weight="1"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="46dp"
+                android:backgroundTint="#FB9292"
+                app:fabSize="mini"
+                app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bảng điểm cao"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btn_history"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_centerVertical= "true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_choose_mode"
+            android:layout_weight="1"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_with_border"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_choose_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="46dp"
+                android:backgroundTint="#FB9292"
+                app:fabSize="mini"
+                app:srcCompat="@android:mipmap/sym_def_app_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chọn màn chơi"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btn_choose_mode"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_centerVertical= "true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_play_again"
+            android:layout_weight="1"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_with_border"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_play_again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="46dp"
+                android:backgroundTint="#FB9292"
+                app:fabSize="mini"
+                app:srcCompat="@android:drawable/ic_menu_rotate"
+                tools:ignore="SpeakableTextPresentCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chơi lại"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btn_play_again"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_centerVertical= "true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_go_home"
+            android:layout_weight="1"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/layout_with_border"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="46dp"
+                android:backgroundTint="#FB9292"
+                app:fabSize="mini"
+                app:srcCompat="@drawable/ic_menulist"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:layout_centerVertical= "true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trang chủ"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btn_home"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_centerVertical= "true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

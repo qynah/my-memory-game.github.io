@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutnewrecordlv2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2A333333"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/tv_newrecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="26dp"
+                android:background="#66FFFFFF"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="KỶ LỤC MỚI !!"
+                android:textColor="#FA9191"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_labelscore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="86dp"
+                android:background="#66FFFFFF"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:text="Điểm: "
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv_newrecord"/>
+            <TextView
+                android:id="@+id/tv_diemcaomoi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#66FFFFFF"
+                android:gravity="center"
+                android:text="1200"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv_newrecord"
+                android:layout_toRightOf="@+id/tv_labelscore"/>
+            <TextView
+                android:id="@+id/tv_ten"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="#66FFFFFF"
+                android:gravity="center|bottom"
+                android:text="Nhập tên: "
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv_labelscore"/>
+            <EditText
+                android:id="@+id/edt_tennguoimoi"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:ems="5"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv_diemcaomoi"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:layout_toRightOf="@+id/tv_ten"/>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FB9292"
+                app:fabSize="mini"
+                app:srcCompat="@android:drawable/ic_menu_save"
+                android:layout_toRightOf="@+id/edt_tennguoimoi"
+                android:layout_below="@+id/tv_diemcaomoi"
+                tools:ignore="SpeakableTextPresentCheck" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_below="@+id/tv_ten"
+                >
+
+                <include
+                    layout="@layout/control_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
